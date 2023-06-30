@@ -1,0 +1,28 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.2/dist/mindar-image-aframe.prod.js"></script>
+</head>
+<body>
+    <a-scene mindar-image="imageTargetSrc: https://cdn.jsdelivr.net/gh/safia1235/rr.github.io@master/boxs.mind;" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
+        <a-assets>
+            <img id="box1" src="https://cdn.jsdelivr.net/gh/safia1235/ss.github.io@master/box1.png" />
+            <img id="box2" src="https://cdn.jsdelivr.net/gh/safia1235/ss.github.io@master/box2.png" />
+            
+        </a-assets>
+
+        <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
+
+        <a-entity mindar-image-target="targetIndex: 0">
+            <a-plane  id="swir" src="https://cdn.jsdelivr.net/gh/safia123/ss.github.io@master/swir.png" opaciy="0.5" position="0 0 0" height="0.552" width="1" rotation="0 0 0"></a-plane>
+        </a-entity>
+        
+        <a-entity mindar-image-target="targetIndex: 1">
+            <a-plane  id="band_ratio_1" src="https://cdn.jsdelivr.net/gh/safia1235/ss.github.io@master/band_ratio_1.png" opaciy="0.5" position="0 0 0" height="0.552" width="1" rotation="0 0 0"></a-plane>
+        </a-entity>
+
+    </a-scene>
+</body>
+</html>
